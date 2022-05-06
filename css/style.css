@@ -48,15 +48,14 @@ body{ background-color: #000000;
 .checkbottom{
     font-size: 70px;
     color:rgb(214, 35, 35);
+    float: right;
     cursor: pointer;
     display:block;
     display: none;
     
 }
 
-#check{
-    display: none;
-
+#check{display: none;
 }
 
 .estilo_nav{
@@ -515,27 +514,29 @@ opacity: 1;
   
 .checkbottom{
     display:block;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 
 }
  
 ul{
-    position: fixed;
+    position:fixed;
+    right: 1%;
     width: 100%;
     height: 100vh;
-    background:coral;
-    top: 80px;
-    left: -100%;
-    
-
-
+    background:bisque;
+    top: 65px;
+    left:-100%;
+    text-align: center;
+    transition: all .5s;
 }
 
-    .header {display: block;
-    }
-    .seccion1{
-        display: flex;
-    }
+
+#check:checked ~ ul{
+    left:0%;
+    background-color: aqua;
+    
+
+}
 
 
 .obtene_estilo{
@@ -620,27 +621,6 @@ ul{
 
 }
 
-
-
-#lateral{
-    display: block;
-    background-color: red;
-    width: 80%;
-    height: 100vh;
-    position: fixed;
-    top:0%;
-    left:100%;
-    z-index: 100;
-}
-#lateral:target{
-    left: 0%;
-
-}
-
-.nav_lista{
-    flex-direction: column;
-
-}
 
 .p{
     font-size: 15px;
