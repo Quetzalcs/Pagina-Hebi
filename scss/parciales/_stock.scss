@@ -1,0 +1,165 @@
+.stock_remeras{
+    transform: scale(100%);transition: 1s;
+    color: beige;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 40px ;
+    background-color: rgba(0, 0, 0, 0.781);
+    border-radius: 20px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 20%;
+ text-align: center;
+
+}    
+
+.stock_remeras:hover{    cursor: pointer;
+    transform: scale(130%);transition: all 1s;}
+
+    .contenedor{
+        display: flex;
+        gap: 100px;
+           
+    }
+    
+    .border{
+        margin: 10px;
+        border: solid;color: #cabdbd60;
+        border-radius: 10px;
+    transform: scale(100%);transition: 1s;
+    color: rgb(194, 201, 96);
+    box-shadow:  1px 1px 0px 0px ;transition: all 0.5s;}
+    
+    .border:hover{
+        transform: scale(108%);transition: all 1s;
+        
+    }
+    
+    .name{
+        font-size: 28px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: bisque;
+        border-radius: 10px;
+        text-transform: uppercase;
+        font-weight: bolder;
+        text-align: center;
+        transform: scale(100%);transition: 1s;
+        margin: 50px;
+        -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+                animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    }
+    
+    @-webkit-keyframes text-focus-in {
+        0% {
+          -webkit-filter: blur(12px);
+                  filter: blur(12px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-filter: blur(0px);
+                  filter: blur(0px);
+          opacity: 1;
+        }
+      }
+      @keyframes text-focus-in {
+        0% {
+          -webkit-filter: blur(12px);
+                  filter: blur(12px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-filter: blur(0px);
+                  filter: blur(0px);
+          opacity: 1;
+        }
+    
+      }
+      .name:hover{
+        color: rgb(255, 255, 255);
+          cursor: pointer;
+        transform: scale(130%);transition: all 1s;
+      }
+      
+      .precio{ 
+          border-radius: 10px;
+          margin: 25px;
+          transform: scale(100%);transition: 1s;
+          color:bisque;
+          display: flex;
+          justify-content: center;
+        font-size: 25px;
+        border: solid #000000;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    }
+    @-webkit-keyframes text-focus-in {
+    0% {
+    -webkit-filter: blur(12px);
+          filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-filter: blur(0px);
+          filter: blur(0px);
+    opacity: 1;
+    }
+    }
+    @keyframes text-focus-in {
+    0% {
+    -webkit-filter: blur(12px);
+          filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-filter: blur(0px);
+          filter: blur(0px);
+    opacity: 1;
+    }
+    }
+    
+    .precio:hover{
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+        box-shadow:  1px 1px 2px 2px ;transition: all 1s;
+        transform: scale(115%);transition: all 1s;
+    }
+    
+    
+    
+    /* remeras flotantes stock */
+    .background{
+        transform: scale(100%);transition: 1s;
+        -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    }
+    
+    @-webkit-keyframes text-focus-in {
+    0% {
+    -webkit-filter: blur(12px);
+          filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-filter: blur(0px);
+          filter: blur(0px);
+    opacity: 1;
+    }
+    }
+    @keyframes text-focus-in {
+    0% {
+    -webkit-filter: blur(12px);
+          filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+    -webkit-filter: blur(0px);
+          filter: blur(0px);
+    opacity: 1;
+    }
+    }
+    .background:hover{ cursor: pointer;
+        transform: scale(110%);transition: all 1s;
+    }
+    
+    

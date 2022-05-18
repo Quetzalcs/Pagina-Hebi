@@ -1,0 +1,33 @@
+.contacto{
+    margin: 20px;
+    color: beige;
+    background-color: rgb(12, 12, 12);
+    text-transform:uppercase;
+    font-weight: bold;
+    font-size: 30px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5px;
+  
+}
+
+.ayuda{
+    color: beige;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    margin: 20px;
+    text-align: center;
+    font-size: 35px ;
+    background-color: rgba(0, 0, 0, 0.781);
+    border-radius: 20px;
+    text-transform: uppercase;
+    animation: float 3s linear infinite;
+
+}
+
+@keyframes float{
+    0% , 100%{  
+         transform: translateY(0px);}
+50%{
+         transform: translateY(-5px);}
+
+}
+
