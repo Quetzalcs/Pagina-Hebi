@@ -225,6 +225,8 @@ img:hover {
 
 /* remeras flotantes stock */
 .background {
+  height: 300px;
+  width: 300px;
   transform: scale(100%);
   transition: 1s;
   -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
