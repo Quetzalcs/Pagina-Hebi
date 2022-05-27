@@ -1,0 +1,2 @@
+-Realice cambios en el CEO/Aplique palabras claves(faltan palabras claves y agregar un parrafo descriptivo).
+-Aplique mixin declarandolo en todos los SASS.

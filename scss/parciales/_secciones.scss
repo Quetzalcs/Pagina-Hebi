@@ -1,8 +1,13 @@
+@mixin generarFlex ($direction ,$ejeprincipal , $ejesecundario ){
+    display:flex;
+    flex-direction: $direction;
+    justify-content: $ejeprincipal;
+    align-items: $ejesecundario;   
+ }
+
 .seccion1 {
+    @include generarFlex( column , center , center);
     color: #9ea5a3;
     min-height: 1000px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
 }

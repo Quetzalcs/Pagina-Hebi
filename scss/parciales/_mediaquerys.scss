@@ -1,18 +1,8 @@
 
 @media screen and (max-width: 600px){
-    .stock_remeras:hover{ transform: scale(105%);transition: all 1s;
-    }
-    
-    .name:hover{   color: rgb(255, 255, 255);
-        cursor: pointer;
-      transform: scale(102%);transition: all 1s;
-    
-    }
-    
-    .background:hover{
-        transform: perspective(50%) ;transition: all 1s;
-    }
-    
+ 
+
+
     
     .obtene_estilo{
         letter-spacing:3px;
@@ -20,8 +10,6 @@
     padding-bottom: 20%;
         text-align: center;
         font-size: 55px;
-    
-    
     }
     
     .contenedor{
@@ -36,12 +24,10 @@
         position: absolute;
         left: 50%;
         top: 50%;
-    
-       transform: translate(-50% , -50%);
-    
-       
-    
-        
+       transform: translate(-50% , -50%);    
+    &:hover{
+        transform: perspective(50%) ;transition: all 1s;
+    }    
     }
     
     .border{
@@ -57,7 +43,9 @@
     .stock_remeras{
         font-size: 36px;
         position: static;
-    
+        &:hover{ transform: scale(105%);transition: all 1s;
+        }
+        
     }
     
     
@@ -67,14 +55,16 @@
         position: absolute;
         bottom: 65%;
         left: 5%;
-    
         transform: translate(-10%);
-    
         font-size: 15px;
-    
-    
+        &:hover{   color: rgb(255, 255, 255);
+            cursor: pointer;
+          transform: scale(102%);transition: all 1s;
+        
+        }
     }
     
+
     .precio{
         text-align: center;
         border: none;
@@ -83,13 +73,13 @@
         right: 1%;
         transform: translate(-90% , -10%);
         font-size: 15px;
-    
-    }
-    .precio:hover{
+      &:hover{
         transform: scale(none);transition: all 1s;
            cursor: pointer;
            color: rgb(255, 255, 255);
            box-shadow: 1px 1px 1px 1px ;transition: all 1s; }
+           }
+
     .p{
         font-size: 15px;
         
@@ -102,22 +92,4 @@
         font-size: 30px;
         position: relative;
     }
-    
-    .footer{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color:sienna;
-        background-color:beige;
-        display: flex;
-        flex-direction:row;
-       justify-content:center;
-       min-height: 100px;
-         gap: 20px;
-        font-size: 16px;
-        width:100%;
-        margin-top: auto;
-    
-    
-    
     }
-    }
-    

@@ -1,3 +1,11 @@
+
+@mixin generarFlex ($direction ,$ejeprincipal , $ejesecundario ){
+  display:flex;
+  flex-direction: $direction;
+  justify-content: $ejeprincipal;
+  align-items: $ejesecundario;   
+}
+
 .stock_remeras{
     transform: scale(100%);transition: 1s;
     color: beige;
@@ -9,11 +17,9 @@
     position: absolute;
     top: 20%;
  text-align: center;
-
-}    
-
-.stock_remeras:hover{    cursor: pointer;
+ &:hover{    cursor: pointer;
     transform: scale(130%);transition: all 1s;}
+    }
 
     .contenedor{
         display: flex;
@@ -27,12 +33,11 @@
         border-radius: 10px;
     transform: scale(100%);transition: 1s;
     color: rgb(194, 201, 96);
-    box-shadow:  1px 1px 0px 0px ;transition: all 0.5s;}
-    
-    .border:hover{
+    box-shadow:  1px 1px 0px 0px ;transition: all 0.5s;
+    &:hover{
         transform: scale(108%);transition: all 1s;
-        
     }
+  }
     
     .name{
         font-size: 28px;
@@ -46,6 +51,11 @@
         margin: 50px;
         -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
                 animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+                &:hover{
+                  color: rgb(255, 255, 255);
+                    cursor: pointer;
+                  transform: scale(130%);transition: all 1s;
+                }
     }
     
     @-webkit-keyframes text-focus-in {
@@ -73,25 +83,26 @@
         }
     
       }
-      .name:hover{
-        color: rgb(255, 255, 255);
-          cursor: pointer;
-        transform: scale(130%);transition: all 1s;
-      }
+ 
       
       .precio{ 
+        @include generarFlex(none,center ,none );
           border-radius: 10px;
           margin: 25px;
           transform: scale(100%);transition: 1s;
           color:bisque;
-          display: flex;
-          justify-content: center;
         font-size: 25px;
         border: solid #000000;
         font-weight: bold;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
         animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        &:hover{
+          cursor: pointer;
+          color: rgb(255, 255, 255);
+          box-shadow:  1px 1px 2px 2px ;transition: all 1s;
+          transform: scale(115%);transition: all 1s;
+      }
     }
     @-webkit-keyframes text-focus-in {
     0% {
@@ -117,14 +128,6 @@
     opacity: 1;
     }
     }
-    
-    .precio:hover{
-        cursor: pointer;
-        color: rgb(255, 255, 255);
-        box-shadow:  1px 1px 2px 2px ;transition: all 1s;
-        transform: scale(115%);transition: all 1s;
-    }
-    
     
     
     /* remeras flotantes stock */
@@ -132,7 +135,11 @@
         transform: scale(100%);transition: 1s;
         -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
         animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        &:hover{ cursor: pointer;
+          transform: scale(110%);transition: all 1s;
+      }
     }
+
     
     @-webkit-keyframes text-focus-in {
     0% {
@@ -158,8 +165,6 @@
     opacity: 1;
     }
     }
-    .background:hover{ cursor: pointer;
-        transform: scale(110%);transition: all 1s;
-    }
+ 
     
     

@@ -1,3 +1,10 @@
+@mixin generarFlex ($direction ,$ejeprincipal , $ejesecundario ){
+      display:flex;
+      flex-direction: $direction;
+      justify-content: $ejeprincipal;
+      align-items: $ejesecundario;   
+   }
+
 .obtene_estilo{
     letter-spacing: 10px;
     word-spacing:15px;
@@ -12,6 +19,9 @@
     transform: scale(100%);transition: 1s;
     -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    &:hover{
+      transform: scale(110%);transition: all 1s;
+  }
 }
 
 @-webkit-keyframes text-focus-in {
@@ -38,20 +48,13 @@ opacity: 0;
 opacity: 1;
 }
 }
-.obtene_estilo:hover{
-    transform: scale(110%);transition: all 1s;
-}
-
-  
-
     /* Home */
     .remera_flotante{
+          @include generarFlex(row ,center ,none );
         transform: scale(100%);transition: 1s;
         width: 300px;
         height: 300px;
         margin-top: 50px;
-        flex-direction: row;
-      justify-content: center;
       -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
       animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   }

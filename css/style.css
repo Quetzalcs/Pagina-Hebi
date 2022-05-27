@@ -46,11 +46,12 @@ img:hover {
 }
 
 .estilo_nav {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  list-style: none;
   gap: 20px;
 }
 
@@ -66,15 +67,16 @@ img:hover {
 }
 
 .estilo_enlace:hover {
-  color: rgba(14, 192, 29, 0.541);
+  color: #70f16b;
 }
 
 .seccion1 {
-  color: #9ea5a3;
-  min-height: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  color: #9ea5a3;
+  min-height: 1000px;
   align-items: center;
 }
 
@@ -135,32 +137,6 @@ img:hover {
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
-@-webkit-keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-    opacity: 1;
-  }
-}
-
 .name:hover {
   color: white;
   cursor: pointer;
@@ -168,22 +144,6 @@ img:hover {
   transition: all 1s;
 }
 
-.precio {
-  border-radius: 10px;
-  margin: 25px;
-  transform: scale(100%);
-  transition: 1s;
-  color: bisque;
-  display: flex;
-  justify-content: center;
-  font-size: 25px;
-  border: solid #000000;
-  font-weight: bold;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-}
-
 @-webkit-keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
@@ -208,6 +168,24 @@ img:hover {
     filter: blur(0px);
     opacity: 1;
   }
+}
+
+.precio {
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
+  align-items: none;
+  border-radius: 10px;
+  margin: 25px;
+  transform: scale(100%);
+  transition: 1s;
+  color: bisque;
+  font-size: 25px;
+  border: solid #000000;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .precio:hover {
@@ -219,14 +197,6 @@ img:hover {
   transition: all 1s;
 }
 
-/* remeras flotantes stock */
-.background {
-  transform: scale(100%);
-  transition: 1s;
-  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-}
-
 @-webkit-keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
@@ -253,10 +223,44 @@ img:hover {
   }
 }
 
+/* remeras flotantes stock */
+.background {
+  transform: scale(100%);
+  transition: 1s;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
 .background:hover {
   cursor: pointer;
   transform: scale(110%);
   transition: all 1s;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
 }
 
 .obtene_estilo {
@@ -276,6 +280,11 @@ img:hover {
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
+.obtene_estilo:hover {
+  transform: scale(110%);
+  transition: all 1s;
+}
+
 @-webkit-keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
@@ -302,20 +311,17 @@ img:hover {
   }
 }
 
-.obtene_estilo:hover {
-  transform: scale(110%);
-  transition: all 1s;
-}
-
 /* Home */
 .remera_flotante {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
   transform: scale(100%);
   transition: 1s;
   width: 300px;
   height: 300px;
   margin-top: 50px;
-  flex-direction: row;
-  justify-content: center;
   -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
@@ -347,6 +353,7 @@ img:hover {
 }
 
 .metodos_pago_estilo {
+  text-align: center;
   margin: 40px;
   color: beige;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -367,10 +374,12 @@ img:hover {
 }
 
 .img_buck {
-  bottom: 15px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: none;
+  cursor: pointer;
+  bottom: 15px;
   animation: float 3s linear infinite;
 }
 
@@ -416,6 +425,7 @@ img:hover {
 }
 
 .hebi {
+  cursor: pointer;
   color: beige;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin: 20px;
@@ -425,6 +435,11 @@ img:hover {
   border-radius: 20px;
   text-transform: uppercase;
   animation: float 3s linear infinite;
+}
+
+.hebi:hover {
+  color: #70f16b;
+  transition: 1s;
 }
 
 @keyframes float {
@@ -445,12 +460,12 @@ img:hover {
 }
 
 .footer {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: sienna;
-  background-color: beige;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: white;
   height: 50px;
   gap: 300px;
   font-size: 16px;
@@ -458,21 +473,19 @@ img:hover {
   margin-top: auto;
 }
 
+h2 {
+  cursor: pointer;
+  transform: scale(100%);
+  transition: 1s;
+}
+
+h2:hover {
+  color: #70f16b;
+  transform: scale(110%);
+  transition: all 1s;
+}
+
 @media screen and (max-width: 600px) {
-  .stock_remeras:hover {
-    transform: scale(105%);
-    transition: all 1s;
-  }
-  .name:hover {
-    color: white;
-    cursor: pointer;
-    transform: scale(102%);
-    transition: all 1s;
-  }
-  .background:hover {
-    transform: perspective(50%);
-    transition: all 1s;
-  }
   .obtene_estilo {
     letter-spacing: 3px;
     word-spacing: 3px;
@@ -492,6 +505,10 @@ img:hover {
     top: 50%;
     transform: translate(-50%, -50%);
   }
+  .background:hover {
+    transform: perspective(50%);
+    transition: all 1s;
+  }
   .border {
     margin: none;
     display: flex;
@@ -503,6 +520,10 @@ img:hover {
     font-size: 36px;
     position: static;
   }
+  .stock_remeras:hover {
+    transform: scale(105%);
+    transition: all 1s;
+  }
   .name {
     text-align: center;
     position: absolute;
@@ -510,6 +531,12 @@ img:hover {
     left: 5%;
     transform: translate(-10%);
     font-size: 15px;
+  }
+  .name:hover {
+    color: white;
+    cursor: pointer;
+    transform: scale(102%);
+    transition: all 1s;
   }
   .precio {
     text-align: center;
@@ -536,19 +563,6 @@ img:hover {
     left: 1%;
     font-size: 30px;
     position: relative;
-  }
-  .footer {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: sienna;
-    background-color: beige;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    min-height: 100px;
-    gap: 20px;
-    font-size: 16px;
-    width: 100%;
-    margin-top: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
